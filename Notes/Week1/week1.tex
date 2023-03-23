@@ -9,9 +9,236 @@
 
 
 \chapter{???}
-\section{???}
+\section{Reactions 1}
 \begin{itemize}
-    \item \marginnote{3/21:}
+    \item \marginnote{3/21:}3 grade components: 2 exams (midterm and second midterm at official time slot), 2 hw sets to prepare you for the tests (for completion), 2 paper critiques (on some recent organometallic paper in the literature, and then we write a 2-page review; goal is not to trash the paper, but to say what you found interesting and what specifically could have been done better, e.g., "they missed this specific substrate that would be good to show").
+    \begin{itemize}
+        \item Exams will be closed book and closed notes.
+        \item No further reminders on deadlines, so stay on top of it yourself!
+    \end{itemize}
+    \item No textbook, just Anderson's notes. Loosely based off of John Hartwig's book \emph{Organometallic Chemistry from Bonding to Catalysis}.
+    \begin{itemize}
+        \item S+M is a good undergraduate text for beginners. They have it at the library.
+    \end{itemize}
+    \item We're assuming a fair amount of knowledge, specifically, counting electrons.
+    \begin{itemize}
+        \item If you don't feel proficient in this, start reading S+M now (I should review my 202 notes!).
+        \item There will be questions on HW1 on this.
+    \end{itemize}
+    \item Anderson will be gone giving a seminar this Thursday, so we should watch the video on Canvas.
+    \item Overall plan for the course: Reaction types, ligand types, catalysis.
+    \item This course should be a bit different than Dong's version, since Dong is a hardcore organic chemist. Anderson will focus a bit more on transition metals.
+    \item Today: Basic reactions of transition metal complexes.
+    \item Association and dissociation reactions.
+    \begin{itemize}
+        \item Recall S\textsubscript{N}1 and S\textsubscript{N}2 reactions.
+        \item These are both ligand substitutions.
+        \item Because of the diverse coordination environments of TMs, we have a few more flavors of this than with pure organic compounds.
+    \end{itemize}
+    \item In this kind of the reaction, there is no change ($\Delta=0$) in\dots
+    \begin{itemize}
+        \item Oxidation state.
+        \item Electron count.
+        \item Coordination number.
+    \end{itemize}
+    \item Dissociative reactions.
+    \item General form.
+    \begin{equation*}
+        \ce{L_nM-L$'$ <=> L_nM + L$'$ <=>[L$''$] L_nM-L$''$ + L$'$}
+    \end{equation*}
+    \item Notes.
+    \begin{itemize}
+        \item Analogous to S\textsubscript{N}1.
+        \item More likely in highly coordinated complexes.
+        \item You rarely have "true" dissociative mechanisms.
+    \end{itemize}
+    \item Associative reactions.
+    \item General form.
+    \begin{equation*}
+        \ce{L_nM-L$'$ <=>[L$''$] L_nM(-L$'$)(-L$''$) <=> L_nM-L$''$ + L$'$}
+    \end{equation*}
+    \item Notes.
+    \begin{itemize}
+        \item Analogous to S\textsubscript{N}2.
+        \item More likely in square planar complexes.
+    \end{itemize}
+    \item BDEs can help differentiate which mechanism takes place.
+    \begin{equation*}
+        \ce{Cp}
+        > \ce{C6H6}
+        > \ce{CO}
+        \approx \ce{PR3}
+        > \ce{PPh3}
+        > \ce{Py}
+        > \ce{NCCH3}
+        > \ce{N2}
+        > \ce{H2}
+        > \text{solv}
+    \end{equation*}
+    \begin{itemize}
+        \item An associative reaction may be more likely with a more active ligand, displacing a less active one.
+        \item Sterics matter: \ce{PPh3} may want to dissociate because its so bulky.
+    \end{itemize}
+    \item Can a true dissociative mechanism exist?
+    \begin{itemize}
+        \item A lot of work has been done on \ce{Pt^{II}}. It's third-row and hence slow, so its kinetics are easier to study.
+        \item Can a square planar \ce{Pt^{II}} center lose a ligand to become T-shaped?
+        \item An important experiment was done by Rafaelle Romeo (Chem Comm 1984, 542 and IC 1989, 28, 1939 and JACS 1989, 111, 8161)
+        \item Main compound considered: \ce{PtPh2(DMSO)2}, DMSO is a Z-type ligand bonding through the oxygen. We trap the T-shaped ligand with a hyperpolarized DMSO molecule. That's something we can monitor the rate of.
+        \item Solvent that this is done in is deuterobenzene (\ce{C6D6}).
+        \item Does the rate depend on the amount of incoming hyperpolarized DMSO? If no, then it's true dissociative.
+        \item Though even if it is "pure dissociative," you may get complications from $\eta^2$-DMSO species.
+        \item If you measure the rates as a function of temperature, you can get what you want.
+        \item $\Delta H^\ddagger=84\pm 26$ kJ/mol and $\Delta S^\ddagger=0.5\pm 78$ eu (entropy units). The larger error makes this basically zero. This all comes from the Eyring-Pulani (??) equation:
+        \begin{equation*}
+            K = \frac{\kB T}{h}\exp(-\frac{\Delta G^\ddagger}{RT})
+            = \frac{\kB T}{h}\exp(\Delta S^\ddagger)\exp(-\frac{\Delta H^\ddagger}{RT})
+        \end{equation*}
+        \begin{itemize}
+            \item It follows that
+            \begin{equation*}
+                \ln\frac{k_\text{obs}}{T} = -\frac{\Delta H^\ddagger}{R}\cdot\frac{1}{T}+\frac{\ln(\kB)}{h}+\frac{\Delta S^\ddagger}{R}
+            \end{equation*}
+            \item The wider the temperature range, the better your data and surer your conclusion.
+        \end{itemize}
+        \item You can also do a volume analysis.
+        \begin{itemize}
+            \item $\Delta V^\ddagger=\SI{5.5}{\centi\meter\cubed\per\mole}$.
+            \item You won't see this very often, though.
+            \item Here, we look at the rate as a function of pressure, which is related back to volume by the ideal gas law.
+        \end{itemize}
+    \end{itemize}
+    \item Associative reactions (that are disguised as dissociative reactions).
+    \emph{picture}
+    \begin{itemize}
+        \item Example from JACS 2003, 125, 8870.
+        \item Consider the above compounds.
+        \item Goal: Consider electrostatic effects between a borate and a silane.
+        \item Reaction: React these compoudns with benzene to substitute the \ce{CH3} and yield \ce{CH4} as a byproduct. You lose the methane via C-H activation.
+        \item Eyring analysis to measure the activation energies again.
+        \item Here, we get $\Delta S^\ddagger=-30.2$ eu and $\Delta H^\ddagger=19$ kcal/mol for a, and $\Delta S^\ddagger=0.2\pm 5$ eu and $\Delta H^\ddagger=16\pm 1$ kcal/mol for b.
+        \item What's proposed is an \textbf{anchiomeric pathway}.
+    \end{itemize}
+    \item What Anderson's doing is introducing two reactions, providing examples, and then providing examples of how they're still being investigated, complicated, and convoluted by the literature.
+    \item Next up: Oxidative additions and reductive eliminations.
+    \item General form.
+    \begin{equation*}
+        \ce{L_nM + A-B <=> L_nM(-A)(-B)}
+    \end{equation*}
+    \item Notes.
+    \begin{itemize}
+        \item In the forward direction\dots
+        \begin{itemize}
+            \item Oxidation state increase by 2.
+            \item Electron count increases by 2.
+            \item Coordination number increases by 2.
+        \end{itemize}
+        \item Reductive elimination is the opposite.
+    \end{itemize}
+    \item Reductive elimination must occur from a \emph{cis} arrangement.
+    \begin{itemize}
+        \item Example: No reductive elimination from \emph{trans} ligands in a square planar complex.
+    \end{itemize}
+    \item Reductive elimination is uncommon for early TM metals (which tend to be more reducing, i.e., don't like to go down to lower oxidation states; these early TMs just do oxidative addition in general)
+    \item Reductive elimination is faster for electron poor metals (e.g., Pd tends to do reductive elimination more quickly than nickel).
+    \item \ce{H2} is fast to reductively eliminate.
+    \item Oxidative addition does not need to be \emph{cis}, i.e., it can yield \emph{trans} products. This is because association tends to be easier than dissociation.
+    \item Example: Vaska's complex, named after Lorrie Vaska, who was a UChi grad student at the time.
+    \emph{structure}
+    \begin{itemize}
+        \item React with \ce{MeI} to get a \emph{cis} addition, where \ce{L} abbreviates \ce{PPh3}.
+        \item React with \ce{H2} to get another \emph{cis} product.
+        \item React with \ce{O2} to get a bidentate chelating species.
+        \begin{itemize}
+            \item Here, we've gone from an oxygen, cleaved a $\pi$ bond, and formed a peroxide. It is a nonclassical oxidative addition.
+        \end{itemize}
+        \item We go \ce{Ir^I -> Ir^{III}} in all three.
+        \item This compound (as well as PFAS's) have been explored as synthetic blood substitutes because of their ability to reversibly bind \ce{O2}. Fluorinated solvents show potential nowadays; this is a hard problem, but an important one.
+    \end{itemize}
+    \item Different kinds of oxidative addition.
+    \item Concerted mechanism.
+    \item General form.
+    \emph{picture; pull image from 202 notes}
+    \item Notes.
+    \begin{itemize}
+        \item We make the adduct with orbital interactions. The filled $\sigma$ orbital donates into the metal $d$ orbitals. Similarly, the metal $d$-orbitals donate into the antibonding orbitals of \ce{A-B}, cleaving that.
+    \end{itemize}
+    \item S\textsubscript{N}2.
+    \item General form.
+    \begin{equation*}
+        \ce{M$:$ + R-X -> M-R^+ + X- -> X-M-R}
+    \end{equation*}
+    \item Notes.
+    \begin{itemize}
+        \item No clear preference for \emph{cis}/\emph{trans}.
+        \item Can also be reversible.
+    \end{itemize}
+    \item Radical chain.
+    \item General form.
+    \begin{equation*}
+        \ce{M + I_n -> MI_n* ->[R-X] I_nM-X + R* ->[M] R-M* + X-R -> R-M-X + R* -> \cdots}
+    \end{equation*}
+    \item Notes.
+    \begin{itemize}
+        \item Even when it looks like clean 2-electron chemistry, we can still have active radical mechanisms. This is a downside of the TM mantra that they "can do a lot of things."
+        \item \ce{I_n} is an initiator.
+    \end{itemize}
+    \item Electron transfers.
+    \item General form.
+    \begin{equation*}
+        \ce{M^Q + R-X -> M^{\cdot +} + R-X^{\cdot -} -> M^{\cdot +} + R* + X- -> M-R+ + X- -> X-M-R}
+    \end{equation*}
+    \item Notes.
+    \begin{itemize}
+        \item Common in cross-coupling chemistry and with palladium.
+    \end{itemize}
+    \item Examples of these different flavors and how one probes between them.
+    \item Jack Halpern.
+    \begin{itemize}
+        \item We'll talk about Halpern a lot because he did a lot of seminal work on mechanistic organometallic chemistry, and he did it here. He was on the short list for a Nobel prize but didn't get it. He was a grumpy old guy.
+    \end{itemize}
+    \item JACS 1966, 88, 354
+    \item \ce{L2IrCl(CO) + MeX} usually yields a \emph{trans} product. You start with a $d^8$ 16 e- compound and end with a $d^6$ 18 e- complex which is very stable. Thus, you get the kinetic product (trans, super stable and inert, will not rearrange into thermodynamic product), not the more stable thermodynamic product.
+    \item Rate trend: $\ce{MeI}>\ce{MeBr}\gg\ce{MeCl}$.
+    \item Rate law: $k[\ce{MeI}][\ce{Ir}]$. $\Delta S^\ddagger=43$ eu.
+    \item Strong solvent polarity effect: The general reaction is \ce{L_nIr + CH3-X -> [L_nIrMe+][X-] -> L_nIr(CH3)(X)}. Proposition: You form an initial 5-coordinate species, and then the anion snaps down.
+    \item Bimolecular oxidative addition.
+    \item General form.
+    \begin{equation*}
+        \ce{2L_nM + R-X -> L_nM-R + L_nM-X}
+    \end{equation*}
+    \item This is another Halpern example: JACS 1965, 87, 5361.
+    \begin{itemize}
+        \item Took \ce{2 Co^{II}(CN)5^3- + MeI -> [(CN)5Co-Me]^3- + (CN)5CoI^3-}.
+        \item We get \ce{2L_nM + 2R-X -> 2L_nM-X + R-R}. Ullmann couplings are thought to go through this pathway.
+        \item Another example where this crops up is \ce{Cp^*2Yb} Yb so its a strong one-electron reductant that wants to get to $3+$, so mixing \ce{Cp^*2Yb + CH2Cl2 -> Cp^*2Yb-Cl + H2ClC-CH2Cl}.
+    \end{itemize}
+    \item Another classic example by Whitesides: JACS 1974, 96, 2814.
+    \emph{picture}
+    \begin{itemize}
+        \item This is an isotopically labeled electrophile reacted with Fp (\ce{CpFe(CO2)-}).
+        \item Looking at this as a Newman projection, we have \emph{cis}-hydrogens. Looking at $J_{\ce{H-H}}$ tells us if they're \emph{cis} or not. Do we investigate this coupling constant with NMR like in 302??
+        \item This yields what's drawn above. It follows that this is a true S\textsubscript{N}2-type reaction with inversion.
+        \item Variation: Insert palladium into the \ce{C-OTs} bond and then a phenyl anion to get get reductive elimination, which \emph{preserves} the stereochemistry.
+        \begin{itemize}
+            \item Takeaway: Concerted implies conservation of the carbon stereochemistry.
+        \end{itemize}
+    \end{itemize}
+    \item One other example with the \ce{Fp} anion: Probing for radical reactions with \ce{Fp-} plus cyclopropyl radical clocks. The idea is that one radical opens extremely rapidly to form another one (\SI{e8}{\per\second}). Bromide gives you the same thing with \ce{Fp} nearly perfectly, meaning that this is perfect S\textsubscript{N}2. Doing this with iodide means that you do have a competitive radical mechanism.
+    \item This answers the question of if you can have competitive mechanisms with the same kind of reaction.
+    \item Last note for today: The \emph{trans} effect and \emph{trans} influence.
+    \item \textbf{Trans influence}: A ground state effect.
+    \begin{itemize}
+        \item Essentially, if you look at the bond lengths of the \ce{Pt-P} bonds in different \emph{cis}/\emph{trans} isomers, they're different.
+        \item \SI{2.25}{\angstrom} vs. \SI{2.31}{\angstrom}.
+        \item Phosphorus is stronger \emph{trans}-influencing, so they weaken bonds \emph{trans} to them.
+        \item What is a stronger \emph{trans} influencing ligand? Look at the spectrochemical series. Essentially the same.
+    \end{itemize}
+    \item \textbf{Trans effect}: A kinetic effect.
+    \begin{itemize}
+        \item The \ce{Cl-} that will substitute first is the one that is \emph{trans} to the stronger trans-influencing ligand (which is likely higher in the spectrochemical series).
+    \end{itemize}
+    \item There's more in the notes that we will not cover, or maybe next lecture.
 \end{itemize}
 
 
